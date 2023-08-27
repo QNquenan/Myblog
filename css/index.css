@@ -1,0 +1,159 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 初始化 */
+
+/* 下划线 */
+.xian {
+    width: 0;
+    height: 3px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+/* 下划线 */
+
+/* 导航栏 */
+.nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav-logo {
+    margin: 5px 0 0 25px;
+}
+
+.nav-logo h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-logo h2 a {
+    color: #fff;
+    line-height: 50px;
+}
+
+.nav-logo:hover .xian {
+    width: 90%;
+}
+
+.nav-xuanXiang {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-xuanXiang-item {
+    width: 150px;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    margin-right: 25px;
+    flex-direction: column;
+}
+
+.nav-xuanXiang-item:hover .xian {
+    width: 70%;
+}
+
+.nav-xuanXiang-item-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.nav-xuanXiang-item svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* 导航栏 */
+
+/* 主体 */
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+}
+
+.title-box-text {
+    font-family: 'fangsong';
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+    color: rgb(245, 245, 245);
+}
+
+.title-box-text::after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    height: 50px;
+    width: 5px;
+    background-color: #fff;
+    animation: san 0.5s steps(1) infinite;
+}
+@keyframes san{
+    0%,100%{
+        background-color: #fff;
+    }
+    50%{
+       background-color: transparent;
+    }
+
+}
+
+/* 主体 */
