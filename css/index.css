@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    transition: all .5s;
 }
 
 body {
@@ -91,6 +92,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    flex-direction: row;
 }
 
 .nav-xuanXiang-item svg {
@@ -157,3 +159,63 @@ body {
 }
 
 /* 主体 */
+
+/* 1080响应式 */
+@media (max-width: 1080px) {
+    /* 导航栏 */
+    .nav {
+        height: 200px;
+    }
+
+    .xian {
+        display: none;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-xuanXiang {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-xuanXiang-item {
+        margin: 0;
+        width: auto;
+    }
+
+    .nav-xuanXiang-item-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-xuanXiang-item-box span {
+        font-size: 2.5em;
+    }
+
+    .nav-xuanXiang-item-box svg {
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 30px;
+    }
+
+    /* 导航栏 */
+
+    /* 主体 */
+    .title h1 {
+        font-size: 6.5em;
+    }
+
+    .title-box-text {
+        font-size: 4em;
+    }
+
+    .title-box-text::after {
+        width: 6px;
+    }
+
+    /* 主体 */
+}
+
+/* 1080响应式 */
