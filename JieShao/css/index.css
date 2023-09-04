@@ -5,13 +5,15 @@
     text-decoration: none;
     list-style: none;
     font-family: '微软雅黑';
+    transition: all .3s;
 }
 
 body {
     background: url('https://pic.imgdb.cn/item/64f4702e661c6c8e5412c167.png') no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 #app {
@@ -150,10 +152,10 @@ body {
     margin-top: 55px;
 }
 
-.mian-sm1 {
+.main-sm1 {
     background: none;
     width: 250px;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +181,7 @@ body {
     margin-bottom: 15px;
 }
 
-.mian-sm2-title h2,.mian-sm2-title h3 {
+.main-sm2-title h2,.main-sm2-title h3 {
     letter-spacing: 2px;
 }
 
@@ -193,8 +195,8 @@ body {
     margin-left: 5px;
 }
 
-.mian-sm2 {
-    width: 900px;
+.main-sm2 {
+    width: 9;
     height: 60vh;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -203,6 +205,7 @@ body {
 .main-sm2-text-title,.main-lianXi-title {
     display: flex;
     margin-top: 15px;
+    align-items: center;
 }
 
 .main-sm2-text-title p,.main-lianXi-title p {
@@ -213,7 +216,7 @@ body {
     font-weight: bolder;
 }
 
-.mian-sm2-card {
+.main-sm2-card {
     width: 100px;
     padding: 2px;
     border-radius: 5px;
@@ -224,13 +227,13 @@ body {
     margin-bottom: 10px;
 }
 
-.mian-sm2-card p {
+.main-sm2-card p {
     font-weight: bolder;
     letter-spacing: 1px;
     color: #fff;
 }
 
-.mian-sm2-box {
+.main-sm2-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -238,18 +241,18 @@ body {
     margin-top: 15px;
 }
 
-.mian-sm2-box2 {
+.main-sm2-box2 {
     width: 30%;
     margin: 10px;
 }
 
-.mian-lianXi-text {
+.main-lianXi-text {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.mian-linXi-card {
+.main-linXi-card {
     width: 150px;
     height: 50px;
     display: flex;
@@ -262,13 +265,17 @@ body {
     cursor: pointer;
 }
 
-.mian-linXi-card p {
+.cdu {
+    width: 130px;
+}
+
+.main-linXi-card p {
     color: #fff;
     font-weight: bolder;
     margin-left: 5px;
 }
 
-.mian-linXi-card:hover {
+.main-linXi-card:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -301,3 +308,182 @@ body {
     opacity: 0.5;
 }
 /* 底部 */
+
+/* 1080响应式 */
+@media (max-width: 1080px) {
+        /* 导航栏 */
+        .nav {
+            height: 200px;
+        }
+    
+        .xian {
+            display: none;
+        }
+    
+        .nav-logo {
+            display: none;
+        }
+    
+        .nav-xuanXiang {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    
+        .nav-xuanXiang-item {
+            margin: 0;
+            width: auto;
+        }
+    
+        .nav-xuanXiang-item-box {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .nav-xuanXiang-item-box span {
+            font-size: 2.5em;
+        }
+    
+        .nav-xuanXiang-item-box svg {
+            width: 2.5em;
+            height: 2.5em;
+            margin-right: 30px;
+        }
+    
+        /* 导航栏 */
+
+        /* 主体 */
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-sm1 {
+            width: 95%;
+            height: auto;
+            margin-top: 200px;
+        }
+
+        .main-sm1 .headShot {
+            width: 50%;
+            height: auto;
+        }
+
+        .main-sm-title h1 {
+            font-size: 100px;
+        }
+
+        .main-sm-title h3 {
+            font-size: 50px;
+        }
+
+        .main-sm-text {
+            width: 95%;
+            font-size: 50px;
+        }
+
+        .main-sm-text-ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-sm-text-ul li {
+            margin: 30px;
+            width: 400px;
+            height: 50px;
+        }
+
+        .main-sm-text-ul svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .main-sm2 {
+            width: 90%;
+            height: auto;
+        }
+
+        .main-sm2-title h2 {
+            font-size: 70px;
+            letter-spacing: 20px;
+        }
+
+        .main-sm2-title h3 {
+            font-size: 40px;
+        }
+
+        .shuXian {
+            height: 100px;
+            width: 15px;
+        }
+
+        .main-sm2-title,.main-lianXi-title {
+            margin: 20px 0 20px 0;
+        }
+
+        .main-sm2-text-title p,.main-lianXi-title p {
+            font-size: 50px;
+        }
+
+        .main-sm2-box {
+            flex-direction: column;
+        }
+
+        .main-sm2-card {
+            width: 450px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        .main-sm2-card svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .main-sm2-card p {
+            font-size: 45px;
+        }
+
+        .main-sm2-box2 {
+            width: 100%;
+        }
+
+        .henXian {
+            height: 20px;
+            border-radius: 50px;
+        }
+
+        .main-lianXi-text {
+            flex-direction: column;
+        }
+
+        .main-lianXi-text svg {
+            width: 80px;
+            height: 80px;
+        }
+
+        .main-lianXi-text p {
+            font-size: 50px;
+        }
+
+        .main-linXi-card {
+            width: 550px;
+            height: 150px;
+        }
+
+        .foot-text p {
+            font-size: 20px;
+        }
+        /* 主体 */
+
+        /* 底部 */
+
+        .footer {
+            font-size: 30px;
+        }
+        /* 底部 */
+}
+/* 1080响应式 */
