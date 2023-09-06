@@ -1,0 +1,492 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: '微软雅黑';
+    transition: all .3s;
+}
+
+body {
+    background: url('https://pic.imgdb.cn/item/64f7f169661c6c8e54df62d4.webp') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vw;
+}
+
+
+#app {
+    width: 100vw;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: #fad3ef;
+    color: #fff;
+}
+/* 初始化 */
+
+/* 下划线 */
+.xian {
+    width: 0;
+    height: 3px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+/* 下划线 */
+
+/* 导航栏 */
+.nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav-logo {
+    margin: 5px 0 0 25px;
+}
+
+.nav-logo h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-logo h2 a {
+    color: #fff;
+    line-height: 50px;
+}
+
+.nav-logo:hover .xian {
+    width: 90%;
+}
+
+.nav-xuanXiang {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-xuanXiang-item {
+    width: 150px;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    margin-right: 25px;
+    flex-direction: column;
+}
+
+.nav-xuanXiang-item:hover .xian {
+    width: 70%;
+}
+
+.nav-xuanXiang-item-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    flex-direction: row;
+}
+
+.nav-xuanXiang-item svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* 导航栏 */
+
+/* 竖线 */
+.shuXian {
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    background: #0e7ffe;
+    border-radius: 50px;
+}
+/* 竖线 */
+
+/* 横线 */
+
+.henXian {
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.henXian .neiXian {
+    background: #fff;
+    border-radius: 5px;
+    height: 100%;
+}
+
+/* 横线 */
+
+/* 主体 */
+
+.main {
+    width: 100vw;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-top: 55px;
+}
+
+.main-sm1 {
+    background: none;
+    width: 250px;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.headShot {
+    width: 80%;
+    margin: 15px 0;
+}
+
+.headShot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.main-sm-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.main-sm2-title h2,.main-sm2-title h3 {
+    letter-spacing: 2px;
+}
+
+.main-sm-text-ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.main-sm-text-ul li p {
+    margin-left: 5px;
+}
+
+.main-sm2 {
+    height: 60vh;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.main-sm2-text-title,.main-lianXi-title {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.main-sm2-text-title p,.main-lianXi-title p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.main-sm2-card {
+    width: 100px;
+    padding: 2px;
+    border-radius: 5px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.main-sm2-card p {
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.main-sm2-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.main-sm2-box2 {
+    width: 30%;
+    margin: 10px;
+}
+
+.main-lianXi-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-linXi-card {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all .2s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cdu {
+    width: 130px;
+}
+
+.main-linXi-card p {
+    color: #fff;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.main-linXi-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.foot-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.foot-text h1{
+    margin-top:50px;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.foot-text p {
+    color: #fff;
+    font-family: 'Old Standard TT', serif;
+}
+/* 主体 */
+
+/* 底部 */
+
+.footer {
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    opacity: 0.5;
+}
+/* 底部 */
+
+/* 1080响应式 */
+@media (max-width: 1080px) {
+    /* 导航栏 */
+    .nav {
+        height: 200px;
+    }
+
+    .xian {
+        display: none;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-xuanXiang {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-xuanXiang-item {
+        margin: 0;
+        width: auto;
+    }
+
+    .nav-xuanXiang-item-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-xuanXiang-item-box span {
+        font-size: 2.5em;
+    }
+
+    .nav-xuanXiang-item-box svg {
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 30px;
+    }
+
+    /* 导航栏 */
+
+        /* 主体 */
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-sm1 {
+            width: 95%;
+            height: auto;
+            margin-top: 200px;
+        }
+
+        .main-sm1 .headShot {
+            width: 50%;
+            height: auto;
+        }
+
+        .main-sm-title h1 {
+            font-size: 100px;
+        }
+
+        .main-sm-title h3 {
+            font-size: 50px;
+        }
+
+        .main-sm-text {
+            width: 95%;
+            font-size: 50px;
+        }
+
+        .main-sm-text-ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-sm-text-ul li {
+            font-size: 40px;
+            margin: 50px;
+            width: 300px;
+            height: 50px;
+        }
+
+        .main-sm-text-ul svg {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .main-sm2 {
+            width: 90%;
+            height: auto;
+        }
+
+        .main-sm2-title h2 {
+            font-size: 50px;
+            letter-spacing: 20px;
+        }
+
+        .main-sm2-title h3 {
+            font-size: 40px;
+        }
+
+        .shuXian {
+            height: 100px;
+            width: 15px;
+        }
+
+        .main-sm2-title,.main-lianXi-title {
+            margin: 50px 0;
+        }
+
+        .main-sm2-text-title p,.main-lianXi-title p {
+            font-size: 50px;
+        }
+
+        .main-sm2-box {
+            flex-direction: column;
+        }
+
+        .main-sm2-card {
+            width: 450px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        .main-sm2-card svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .main-sm2-card p {
+            font-size: 45px;
+        }
+
+        .main-sm2-box2 {
+            width: 100%;
+        }
+
+        .henXian {
+            height: 20px;
+            border-radius: 50px;
+        }
+
+        .main-lianXi-text {
+            flex-direction: column;
+        }
+
+        .main-lianXi-text svg {
+            width: 80px;
+            height: 80px;
+        }
+
+        .main-lianXi-text p {
+            font-size: 50px;
+        }
+
+        .main-linXi-card {
+            width: 550px;
+            height: 150px;
+        }
+
+        .foot-text p {
+            font-size: 20px;
+            text-align: center;
+        }
+        /* 主体 */
+
+        /* 底部 */
+        .footer {
+            font-size: 30px;
+        }
+        /* 底部 */
+}
+/* 1080响应式 */
