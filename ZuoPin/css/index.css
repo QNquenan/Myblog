@@ -1,0 +1,255 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: '微软雅黑';
+    transition: all .3s;
+}
+
+body {
+    background: url('https://z1.ax1x.com/2023/10/29/pimZAA0.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+}
+
+
+#app {
+    width: 100vw;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background: #fad3ef;
+    color: #fff;
+}
+
+/* 初始化 */
+
+/* 下划线 */
+.xian {
+    width: 0;
+    height: 3px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+/* 下划线 */
+
+/* 导航栏 */
+.nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav-logo {
+    margin: 5px 0 0 25px;
+}
+
+.nav-logo h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-logo h2 a {
+    color: #fff;
+    line-height: 50px;
+}
+
+.nav-logo:hover .xian {
+    width: 90%;
+}
+
+.nav-xuanXiang {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-xuanXiang-item {
+    width: 150px;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    margin-right: 25px;
+    flex-direction: column;
+}
+
+.nav-xuanXiang-item:hover .xian {
+    width: 70%;
+}
+
+.nav-xuanXiang-item-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    flex-direction: row;
+}
+
+.nav-xuanXiang-item svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* 导航栏 */
+
+/* 主体 */
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box {
+    width: 80%;
+    height: 800px;
+    margin-top: 90px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box .text .text_item {
+    color: #e9f1f6;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 4px black;
+}
+
+.main .box .text .text_item span {
+    font-size: 20px;
+    
+}
+
+/* 主体 */
+
+/* 底部 */
+
+.footer {
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+/* 底部 */
+
+/* 1080响应式 */
+@media (max-width: 1080px) {
+
+    /* 导航栏 */
+    .nav {
+        height: 200px;
+    }
+
+    .xian {
+        display: none;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-xuanXiang {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-xuanXiang-item {
+        margin: 0;
+        width: auto;
+    }
+
+    .nav-xuanXiang-item-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-xuanXiang-item-box span {
+        font-size: 2.5em;
+    }
+
+    .nav-xuanXiang-item-box svg {
+        width: 2.5em;
+        height: 2.5em;
+        margin-right: 30px;
+    }
+
+    /* 导航栏 */
+
+    /* 主体 */
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box {
+    width: 90%;
+    height: 80vh;
+    margin-top: 230px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .box .text .text_item {
+    color: #e9f1f6;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-shadow: 3px 3px 4px black;
+}
+
+.main .box .text .text_item h2 {
+    font-size: 70px;
+}
+
+.main .box .text .text_item span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* 主体 */
+
+    /* 底部 */
+    .footer {
+        font-size: 30px;
+    }
+
+    /* 底部 */
+}
+
+/* 1080响应式 */
