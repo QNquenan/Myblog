@@ -114,6 +114,7 @@ body {
 /* 主体 */
 
 .main {
+    
     width: 100%;
     height: 100%;
     display: flex;
@@ -128,22 +129,66 @@ body {
     margin-bottom: 5px;
     border-radius: 10px;
     background: rgba(255,255,255,0.5);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    padding: 30px;
 }
 
-.main .box .text .text_item {
-    color: #e9f1f6;
-    margin: 10px;
+.main .box .card {
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    text-shadow: 1px 1px 4px black;
+    margin: 0 auto;
 }
 
-.main .box .text .text_item span {
-    font-size: 20px;
-    
+.box .card:hover {
+    box-shadow: 0 6px 5px #8C8C8C;
+    transform: translateY(-5px);
+}
+
+.box .title {
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.card h1 {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+.card p {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    color: gray;
+}
+
+.card button {
+    margin: 10px;
+    height: 50px;
+    width: 90%;
+    border: none;
+    background: #FFAD5F;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button a {
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: bold;
 }
 
 /* 主体 */
@@ -205,42 +250,56 @@ body {
 
     /* 主体 */
 
-.main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.main .box {
-    width: 90%;
-    height: 80vh;
-    margin-top: 230px;
-    margin-bottom: 60px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .main .box {
+        width: 90%;
+        height: 100vh;
+        margin-top: 230px;
+        margin-bottom: 60px;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.5);
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+    }
 
-.main .box .text .text_item {
-    color: #e9f1f6;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    text-shadow: 3px 3px 4px black;
-}
+    .main .box .title {
+        font-size: 3em;
+    }
 
-.main .box .text .text_item h2 {
-    font-size: 70px;
-}
+    .main .box .card {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
 
-.main .box .text .text_item span {
-    font-size: 50px;
-    font-weight: bold;
-}
+    .main .box .card h1 {
+        font-size: 3em;
+    }
+
+    .main .box .card p {
+        font-size: 2em;
+    }
+
+    .main .box button {
+        height: 100px;
+    }
+
+    .main .box a {
+        font-size: 3em;
+    }
 
 /* 主体 */
 
