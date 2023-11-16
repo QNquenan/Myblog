@@ -185,6 +185,15 @@ body {
     letter-spacing: 2px;
 }
 
+.main-sm2-title h3 a {
+    color: #fad3ef;
+}
+
+.main-sm2-title h3 a:hover {
+    color: #F580A6;
+    font-size: 30px;
+}
+
 .main-sm-text-ul li {
     display: flex;
     align-items: center;
