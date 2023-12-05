@@ -21,7 +21,7 @@
 //打字机
 const text = $('.title-box-text'); // 获取.title-box-text元素
 
-const txt = ["Nice to see you","Welcome to my blog"]; // 定义数组，里面放上文本
+const txt = ["Nice to see you","Welcome to my home"]; // 定义数组，里面放上文本
 
 let index = 0; // 定义当前要显示的字符串的第几个字符
 
